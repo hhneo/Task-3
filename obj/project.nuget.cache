@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "aIG2UOwWI4k=",
+  "success": true,
+  "projectFilePath": "E:\\I-Transiiton\\Task-3\\Task3\\Task3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\biginteger\\1.0.7\\biginteger.1.0.7.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'BigInteger 1.0.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "projectPath": "E:\\I-Transiiton\\Task-3\\Task3\\Task3.csproj",
+      "warningLevel": 1,
+      "filePath": "E:\\I-Transiiton\\Task-3\\Task3\\Task3.csproj",
+      "libraryId": "BigInteger",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

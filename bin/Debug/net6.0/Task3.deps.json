@@ -1,0 +1,57 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Task3/1.0.0": {
+        "dependencies": {
+          "BigInteger": "1.0.7",
+          "Portable.BouncyCastle": "1.9.0"
+        },
+        "runtime": {
+          "Task3.dll": {}
+        }
+      },
+      "BigInteger/1.0.7": {
+        "runtime": {
+          "lib/net20/BigInteger.dll": {
+            "assemblyVersion": "1.0.7.0",
+            "fileVersion": "1.0.7.0"
+          }
+        }
+      },
+      "Portable.BouncyCastle/1.9.0": {
+        "runtime": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
+            "assemblyVersion": "1.9.0.0",
+            "fileVersion": "1.9.0.1"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Task3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BigInteger/1.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PaOPKvMc7s/RygNuD+4eMCBuzQOsQY8o4ja7If1fScGgVX/sq6LfYzXHXxqlfrh2gCl5k9yLSUZQw6edIIeI+w==",
+      "path": "biginteger/1.0.7",
+      "hashPath": "biginteger.1.0.7.nupkg.sha512"
+    },
+    "Portable.BouncyCastle/1.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eZZBCABzVOek+id9Xy04HhmgykF0wZg9wpByzrWN7q8qEI0Qen9b7tfd7w8VA3dOeesumMG7C5ZPy0jk7PSRHw==",
+      "path": "portable.bouncycastle/1.9.0",
+      "hashPath": "portable.bouncycastle.1.9.0.nupkg.sha512"
+    }
+  }
+}
