@@ -9,11 +9,12 @@ namespace NonTransitiveDice
 {
     public class FairRandomGenerator
     {
-        public (byte[] key, int number) GenerateRandomNumber(int maxValue)
+        public (byte[] key, int number, string hmac) GenerateCommitment(int maxValue)
         {
             byte[] key = RandomNumberGenerator.GetBytes(Constants.KeySizeInBytes);
             int number = RandomNumberGenerator.GetInt32(0, maxValue + 1);
-            return (key, number);
+            string hmac = CalculateHmac(key, number);
+            return (key, number, hmac);
         }
 
         public string CalculateHmac(byte[] key, int number)
@@ -22,5 +23,12 @@ namespace NonTransitiveDice
             byte[] hash = hmac.ComputeHash(BitConverter.GetBytes(number));
             return BitConverter.ToString(hash).Replace("-", "");
         }
+
+        public int CalculateFairResult(int userNumber, int computerNumber, int modulus)
+        {
+            return (userNumber + computerNumber) % modulus;
+        }
     }
 }
+
+
